@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo-App</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <!-- First Page: Sign In -->
+    <div id="firstPage" class="design">
+        <h1>WELCOME TO MY TODO APP</h1>
+        <form id="signInForm" class="viewPoin1">
+            <div class="viewPoin2">
+                <label for="email">Email</label>
+                <input type="email" id="signInEmail" placeholder="User email">
+
+                <label for="password">Password</label>
+                <input type="password" id="signInPassword" placeholder="Password">
+
+                <button type="submit" id="signInButt" class="buttDesign" onclick="getUserInfo()">Sign in</button>
+                <button type="button" id="showSignUp" class="buttDesign">Sign up</button>
+            </div>
+        </form>
+    </div>
+
+    <!-- Second Page: Sign Up -->
+    <div id="secondPage" class="design"> 
+        <h2>Create Account</h2>
+        <form id="signUpForm" class="viewPoin1">
+            <div class="viewPoin2" >
+                <label for="userName">Name</label>  
+                <input type="text" id="userName" placeholder="User name">
+
+                <label for="email">Email</label>
+                <input type="email" id="signUpEmail" placeholder="User email">
+
+                <label for="password">Password</label>
+                <input type="password" id="signUpPassword" placeholder="Password">
+
+                <button type="submit" id="signUpButt" class="buttDesign" onclick="addUserInfo()">Sign up</button>
+            </div>
+        </form>       
+    </div>
+
+
+    <div id="thirdPage">
+        <h3>Make you own todo list</h3>
+        <div id="inputBar">
+            <input type="text" id="taskInput" placeholder="Enter your task here">
+            <button id="addTask" onclick="addToDo()" class="buttDesign">add</button>
+        </div>
+        <div id="taskList"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
