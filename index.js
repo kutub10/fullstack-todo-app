@@ -10,7 +10,7 @@ app.use(express.json());
 app.use(cors());
 app.use(express.static(path.join(__dirname, "public")));
 
-mongoose.connect("mongodb+srv://kutub:f4wbzvwoYwMX238b@kutub.7jzvxab.mongodb.net/userInfo")
+mongoose.connect("mongodb+srv://create free MongoDB database/userInfo")
    .then(() => console.log("DB connected"))
    .catch((err) => console.log("DB connection error:", err));
 
